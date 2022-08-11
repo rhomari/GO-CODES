@@ -43,7 +43,7 @@ const (
 )
 
 func main() {
-	ret := msgbox("Title goes here", "This a message Box", 0x00000000)
+	ret := msgbox("Title goes here", "This a message Box", MB_ICONEXCLAMATION|MB_OK)
 	fmt.Println(ret)
 }
 func msgbox(title string, message string, style uint32) int32 {
